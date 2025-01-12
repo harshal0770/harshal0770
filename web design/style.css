@@ -1,0 +1,117 @@
+/* author: https://codepen.io/GreenSock/pen/YzbPYMx
+GSAP
+ */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper,
+.content {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.content {
+  overflow-x: hidden;
+}
+
+.content .section {
+  width: 100%;
+  height: 100vh;
+}
+
+.content .section.hero {
+  background-image: url(https://images.unsplash.com/photo-1589848315097-ba7b903cc1cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapers.com%2Fhd-nature&psig=AOvVaw09_sPkeeiZoNXMJlMh1km9&ust=1736739951263000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDa7NOi74oDFQAAAAAdAAAAABAE);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  perspective: 500px;
+  overflow: hidden;
+}
+/* Purple section */
+.content .section.purple {
+  background-color: rgb(219, 208, 219);
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+}
+.content .section.blue {
+  background-color: #1E90FF; /* DodgerBlue color */
+}
+
+.content .section.purple.in-view {
+  transform: translateX(0);
+}
+/* Blue section */
+.content .section.blue {
+  background-color: #1E90FF; /* DodgerBlue color */
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+  background-image: url(https://drive.google.com/drive/folders/1raVFDhcLdUNRW1PIDhLB4c98CivF38QJ);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .section.purple {
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapers.com%2Fhd-nature&psig=AOvVaw09_sPkeeiZoNXMJlMh1km9&ust=1736739951263000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDa7NOi74oDFQAAAAAdAAAAABAE);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.8); /* Make text slightly transparent */
+}
+/* Blue section */
+.content .section.blue {
+  background-color: blue;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+background-image: url(https://wallpapers.com/images/featured-full/hd-nature-ngdfb9h966h4z3le.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.content .section.blue.in-view {
+  transform: translateX(0);
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Profile photo section */
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
