@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/xxmzBrw.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script defer src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Personal Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: monospace, sans-serif;
+            color: rgb(230, 230, 230);
+            background-color: #ffffff00; /* Default background color */
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        .section {
+            padding: 50px 20px;
+        }
+
+        .gradient-purple {
+            display: flex;
+            background: url('https://images.hdqwalls.com/download/tree-alone-dark-evening-4k-ay-1920x1080.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .gradient-blue {
+            background: url('https://images.hdqwalls.com/download/mountains-landscape-dark-nature-4k-i0-1920x1080.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .profile-container {
+            text-align: center;
+            padding: 40px;
+            background-color: hsla(0, 0%, 0%, 0);
+            border-radius: 16px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 1px 8px 20px rgba(0, 6, 0, 0.2);
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid rgba(246, 246, 246, 0);
+            object-fit: cover;
+            margin-bottom: 15px;
+        width: 180px;
+        height: 180px;
+    }
+
+        .profile-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .profile-container p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: rgb(237, 236, 236);
+            background-color: #2575fc;
+            border-radius: 1px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #6a11cb;
+        }
+
+        .skills-container {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .skills-container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .skills-container ul {
+            list-style: none;
+        }
+
+        .skills-container ul li {
+            margin-bottom: 15px;
+            font-size: 1rem;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skills-container ul li::before {
+            content: "✓";
+            color: #6a11cb;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+     <!-- Hero Section -->
+<section class="section hero">
+  <h1>Welcome to my personal website</h1> <!-- Updated text -->
+</section>
+
+      <!-- Purple Section -->
+      <section class="section gradient-purple">
+        <div class="profile-container">
+          <img class="profile-photo" src="https://i.ibb.co/JRdGf4T/cropped-image.png" alt="Profile Photo"> <!-- Replace with a valid image link -->
+          <h1>Harshal Lahare</h1>
+          <p>
+            Hi! I’m Harshal. I’m passionate about coding, gaming, and exploring new technologies. I strive to blend creativity and innovation in every project I work on. 
+            Currently, I am on a journey to enhance my skills in web design and Python programming while delving into exciting fields like AI and Natural Language Processing.
+          </p>
+          <a href="https://github.com/harshal0770/harshal0770/blob/main/ai%20summary.py" class="btn">View My Projects</a>
+        </div>
+      </section>
+      
+      <!-- Blue Section -->
+      <section class="section gradient-blue">
+        <div class="skills-container">
+          <h2>About Me</h2>
+          <p>
+              I am an aspiring developer with a keen interest in creating innovative solutions through technology. My journey into the tech world began with an innate curiosity about how things work and how I could make them better.
+          </p>
+          <p>
+              In addition to being a tech enthusiast, I enjoy gaming and continuously learning about new technologies. My recent projects include working on NLP (Natural Language Processing) summaries using AI.
+          </p>
+          <p>
+              As a beginner in Python and web design, I love exploring new frameworks and tools to expand my knowledge and creativity. When I’m not coding or gaming, you’ll find me brainstorming ideas for my next tech adventure.
+          </p>
+          <ul>
+            <li>Beginner at Web Design</li>
+            <li>Beginner at Python Programming</li>
+            <li>Creative and love gaming</li>
+            <li>Learning about new technologies</li>
+            <li>Recent Project: NLP Summary Using AI</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="image-container">
+      <img src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp" alt="image">
+    </div>
+  </div>
+</body>
+</html>
